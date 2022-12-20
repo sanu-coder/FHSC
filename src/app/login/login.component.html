@@ -1,0 +1,31 @@
+<div>
+    <div class="login-bg">
+      <div class="login-box">
+        <h2>Login</h2>
+        <form>
+          <div class="user-box">
+            <input type="text" name="email" required="" [(ngModel)]="email">
+            <label for="email">Email</label>
+          </div>
+          <div class="user-box">
+            <input type="password" name="password" required="" [(ngModel)]=password>
+            <label for="password">Password</label>
+          </div>
+       
+            <!-- <a href="#" class="submit" >
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Submit
+              
+            </a> -->
+            <button type="submit" class="btn-register" (click)="onSubmit()">Submit</button>
+        </form>
+        <div>
+          <p style="color: black; font-size: 20px;margin-top: 15px;">New User?? <a routerLink="/register">Register Here!!</a></p>
+          
+        </div>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,100 @@
+
+.login-bg{
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+}
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: black;
+    text-align: center;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: black;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: black;
+    font-size: 12px;
+  }
+
+.btn-register{
+  font-size: 18px;
+  height: 50px;
+  width: 200px;
+  border-radius: 30px;
+  border: 1px solid black;
+  color: black;
+}
+.btn-register:hover{
+  
+  font-weight: 400;
+  color: white;
+  font-size: 20px;
+  background-color: black;
+  border: 0.2px solid black;
+  animation: colorAnimation 1s ease-in-out;
+}
+@keyframes colorAnimation {
+  25% {
+    transform: rotate(7deg) translate(5px);
+  }
+  50% {
+    transform: rotate(-7deg) translate(-5px);
+  }
+  60% {
+    transform: rotate(6deg) translate(4px);
+  }
+  70% {
+    transform: rotate(-5deg) translate(-3px);
+  }
+  80% {
+    transform: rotate(4deg) translate(2px);
+  }
+  90% {
+    transform: rotate(-2deg) translate(-1px);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
